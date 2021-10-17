@@ -15,9 +15,11 @@
     <ClInclude Include="src\Banana\Application.h" />
     <ClInclude Include="src\Banana\Core.h" />
     <ClInclude Include="src\Banana\EntryPoint.h" />
+    <ClInclude Include="src\Banana\Log.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Banana\Application.cpp" />
+    <ClCompile Include="src\Banana\Log.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -68,6 +70,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>BN_PlATFORM_WINDOWS;BN_BUILD_DLL;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Banana\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -82,6 +85,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>BN_PlATFORM_WINDOWS;BN_BUILD_DLL;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Banana\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
