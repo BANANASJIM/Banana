@@ -15,7 +15,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{85086FAA-1A44-433B-A910-85F913FAE1F8}</ProjectGuid>
+    <ProjectGuid>{06C4ECA8-F265-177F-DB20-2BD3C7619ECF}</ProjectGuid>
     <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>Banana</RootNamespace>
