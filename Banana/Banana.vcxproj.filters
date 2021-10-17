@@ -4,6 +4,9 @@
     <Filter Include="Banana">
       <UniqueIdentifier>{06C4ECA8-F265-177F-DB20-2BD3C7619ECF}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Banana\Events">
+      <UniqueIdentifier>{2AED68A3-96AD-E4D9-5FE8-2D57CB6729B6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Banana.h" />
@@ -15,6 +18,18 @@
     </ClInclude>
     <ClInclude Include="src\Banana\EntryPoint.h">
       <Filter>Banana</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Banana\Events\ApplicationEvent.h">
+      <Filter>Banana\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Banana\Events\Event.h">
+      <Filter>Banana\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Banana\Events\KeyEvent.h">
+      <Filter>Banana\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Banana\Events\MouseEvent.h">
+      <Filter>Banana\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Banana\Log.h">
       <Filter>Banana</Filter>
