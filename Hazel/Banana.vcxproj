@@ -80,10 +80,10 @@
       <PrecompiledHeaderFile>bnpch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>BN_PLATFORM_WINDOWS;BN_BUILD_DLL;BN_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>src;vendor\spdlog\include;vendor\GLFW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Banana\src;..\Banana\vendor\spdlog\include;..\Banana\vendor\GLFW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
-      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -102,7 +102,7 @@
       <PrecompiledHeaderFile>bnpch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>BN_PLATFORM_WINDOWS;BN_BUILD_DLL;BN_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>src;vendor\spdlog\include;vendor\GLFW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Banana\src;..\Banana\vendor\spdlog\include;..\Banana\vendor\GLFW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -128,7 +128,7 @@
       <PrecompiledHeaderFile>bnpch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>BN_PLATFORM_WINDOWS;BN_BUILD_DLL;BN_DIST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>src;vendor\spdlog\include;vendor\GLFW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Banana\src;..\Banana\vendor\spdlog\include;..\Banana\vendor\GLFW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -149,27 +149,27 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="src\Banana.h" />
-    <ClInclude Include="src\Banana\Application.h" />
-    <ClInclude Include="src\Banana\Core.h" />
-    <ClInclude Include="src\Banana\EntryPoint.h" />
-    <ClInclude Include="src\Banana\Events\ApplicationEvent.h" />
-    <ClInclude Include="src\Banana\Events\Event.h" />
-    <ClInclude Include="src\Banana\Events\KeyEvent.h" />
-    <ClInclude Include="src\Banana\Events\MouseEvent.h" />
-    <ClInclude Include="src\Banana\Log.h" />
-    <ClInclude Include="src\Banana\Window.h" />
-    <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
-    <ClInclude Include="src\bnpch.h" />
+    <ClInclude Include="..\Banana\src\Banana.h" />
+    <ClInclude Include="..\Banana\src\Banana\Application.h" />
+    <ClInclude Include="..\Banana\src\Banana\Core.h" />
+    <ClInclude Include="..\Banana\src\Banana\EntryPoint.h" />
+    <ClInclude Include="..\Banana\src\Banana\Events\ApplicationEvent.h" />
+    <ClInclude Include="..\Banana\src\Banana\Events\Event.h" />
+    <ClInclude Include="..\Banana\src\Banana\Events\KeyEvent.h" />
+    <ClInclude Include="..\Banana\src\Banana\Events\MouseEvent.h" />
+    <ClInclude Include="..\Banana\src\Banana\Log.h" />
+    <ClInclude Include="..\Banana\src\Banana\Window.h" />
+    <ClInclude Include="..\Banana\src\Platform\Windows\WindowsWindow.h" />
+    <ClInclude Include="..\Banana\src\bnpch.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Banana\Application.cpp" />
-    <ClCompile Include="src\Banana\Log.cpp" />
-    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
-    <ClCompile Include="src\bnpch.cpp" />
+    <ClCompile Include="..\Banana\src\Banana\Application.cpp" />
+    <ClCompile Include="..\Banana\src\Banana\Log.cpp" />
+    <ClCompile Include="..\Banana\src\Platform\Windows\WindowsWindow.cpp" />
+    <ClCompile Include="..\Banana\src\bnpch.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="vendor\GLFW\GLFW.vcxproj">
+    <ProjectReference Include="..\Banana\vendor\GLFW\GLFW.vcxproj">
       <Project>{154B857C-0182-860D-AA6E-6C109684020F}</Project>
     </ProjectReference>
   </ItemGroup>

@@ -1,7 +1,6 @@
 #pragma once
 
 #include "Event.h"
-#include <sstream>
 
 namespace Banana {
 
@@ -53,5 +52,4 @@ namespace Banana {
 
 		EVENT_CLASS_TYPE(KeyReleased)
 	};
-
 }

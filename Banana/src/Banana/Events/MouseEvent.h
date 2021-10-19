@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace Banana {
 
 	class BANANA_API MouseMovedEvent : public Event

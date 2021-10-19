@@ -15,49 +15,49 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Banana.h" />
-    <ClInclude Include="src\Banana\Application.h">
+    <ClInclude Include="..\Banana\src\Banana.h" />
+    <ClInclude Include="..\Banana\src\Banana\Application.h">
       <Filter>Banana</Filter>
     </ClInclude>
-    <ClInclude Include="src\Banana\Core.h">
+    <ClInclude Include="..\Banana\src\Banana\Core.h">
       <Filter>Banana</Filter>
     </ClInclude>
-    <ClInclude Include="src\Banana\EntryPoint.h">
+    <ClInclude Include="..\Banana\src\Banana\EntryPoint.h">
       <Filter>Banana</Filter>
     </ClInclude>
-    <ClInclude Include="src\Banana\Events\ApplicationEvent.h">
+    <ClInclude Include="..\Banana\src\Banana\Events\ApplicationEvent.h">
       <Filter>Banana\Events</Filter>
     </ClInclude>
-    <ClInclude Include="src\Banana\Events\Event.h">
+    <ClInclude Include="..\Banana\src\Banana\Events\Event.h">
       <Filter>Banana\Events</Filter>
     </ClInclude>
-    <ClInclude Include="src\Banana\Events\KeyEvent.h">
+    <ClInclude Include="..\Banana\src\Banana\Events\KeyEvent.h">
       <Filter>Banana\Events</Filter>
     </ClInclude>
-    <ClInclude Include="src\Banana\Events\MouseEvent.h">
+    <ClInclude Include="..\Banana\src\Banana\Events\MouseEvent.h">
       <Filter>Banana\Events</Filter>
     </ClInclude>
-    <ClInclude Include="src\Banana\Log.h">
+    <ClInclude Include="..\Banana\src\Banana\Log.h">
       <Filter>Banana</Filter>
     </ClInclude>
-    <ClInclude Include="src\Banana\Window.h">
+    <ClInclude Include="..\Banana\src\Banana\Window.h">
       <Filter>Banana</Filter>
     </ClInclude>
-    <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
+    <ClInclude Include="..\Banana\src\Platform\Windows\WindowsWindow.h">
       <Filter>Platform\Windows</Filter>
     </ClInclude>
-    <ClInclude Include="src\bnpch.h" />
+    <ClInclude Include="..\Banana\src\bnpch.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Banana\Application.cpp">
+    <ClCompile Include="..\Banana\src\Banana\Application.cpp">
       <Filter>Banana</Filter>
     </ClCompile>
-    <ClCompile Include="src\Banana\Log.cpp">
+    <ClCompile Include="..\Banana\src\Banana\Log.cpp">
       <Filter>Banana</Filter>
     </ClCompile>
-    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
+    <ClCompile Include="..\Banana\src\Platform\Windows\WindowsWindow.cpp">
       <Filter>Platform\Windows</Filter>
     </ClCompile>
-    <ClCompile Include="src\bnpch.cpp" />
+    <ClCompile Include="..\Banana\src\bnpch.cpp" />
   </ItemGroup>
 </Project>

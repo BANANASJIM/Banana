@@ -1,7 +1,6 @@
 workspace "Banana"
-
 	architecture "x64"
-	
+
 	configurations
 	{
 		"Debug",
@@ -9,15 +8,24 @@ workspace "Banana"
 		"Dist"
 	}
 
-outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architechture}"
+outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
+
+-- Include directories relative to root folder (solution directory)
+IncludeDir = {}
+IncludeDir["GLFW"] = "Banana/vendor/GLFW/include"
+
+include "Banana/vendor/GLFW"
 
 project "Banana"
 	location "Banana"
-	kind "Sharedlib"
+	kind "SharedLib"
 	language "C++"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+
+	pchheader "bnpch.h"
+	pchsource "Banana/src/hzpch.cpp"
 
 	files
 	{
@@ -26,19 +34,26 @@ project "Banana"
 	}
 
 	includedirs
-	{	
+	{
 		"%{prj.name}/src",
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links 
+	{ 
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"
 		cppdialect "C++17"
-		staticruntime "on"
+		staticruntime "On"
 		systemversion "latest"
 
 		defines
 		{
-			"BN_PlATFORM_WINDOWS",
+			"BN_PLATFORM_WINDOWS",
 			"BN_BUILD_DLL"
 		}
 
@@ -51,19 +66,18 @@ project "Banana"
 		defines "BN_DEBUG"
 		symbols "On"
 
-	filter "configurations:Realease"
-		defines "BN_REALEASE"
+	filter "configurations:Release"
+		defines "BN_RELEASE"
 		optimize "On"
 
 	filter "configurations:Dist"
 		defines "BN_DIST"
 		optimize "On"
 
-
 project "Sandbox"
-		location "Sandbox"
-		kind "ConsoleApp"
-		language "C++"
+	location "Sandbox"
+	kind "ConsoleApp"
+	language "C++"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
@@ -87,26 +101,22 @@ project "Sandbox"
 
 	filter "system:windows"
 		cppdialect "C++17"
-		staticruntime "on"
+		staticruntime "On"
 		systemversion "latest"
-
 
 		defines
 		{
-			"BN_PlATFORM_WINDOWS"
+			"BN_PLATFORM_WINDOWS"
 		}
-
 
 	filter "configurations:Debug"
 		defines "BN_DEBUG"
 		symbols "On"
 
-	filter "configurations:Realease"
-		defines "BN_REALEASE"
+	filter "configurations:Release"
+		defines "BN_RELEASE"
 		optimize "On"
 
 	filter "configurations:Dist"
 		defines "BN_DIST"
 		optimize "On"
-
-		

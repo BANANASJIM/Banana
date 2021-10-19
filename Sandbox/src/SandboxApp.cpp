@@ -5,11 +5,12 @@ class Sandbox : public Banana::Application
 public:
 	Sandbox()
 	{
+
 	}
 
 	~Sandbox()
 	{
-	
+
 	}
 
 };
