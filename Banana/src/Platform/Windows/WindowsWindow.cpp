@@ -57,7 +57,7 @@ namespace Banana {
 				WindowData& data = *(WindowData*)glfwGetWindowUserPointer(window);
 				data.Width = width;
 				data.Height = height;
-
+				
 				WindowResizeEvent event(width, height);
 				data.EventCallback(event);
 			});

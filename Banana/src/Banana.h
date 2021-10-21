@@ -3,6 +3,7 @@
 // For use by Banana application 
 
 #include "Banana/Application.h"
+#include "Banana/Layer.h"
 #include "Banana/Log.h"
 
 

@@ -149,6 +149,8 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\Banana\LayerStack.h" />
+    <ClInclude Include="src\Banana\Layer.h" />
     <ClInclude Include="src\Banana.h" />
     <ClInclude Include="src\Banana\Application.h" />
     <ClInclude Include="src\Banana\Core.h" />
@@ -163,6 +165,8 @@
     <ClInclude Include="src\bnpch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Banana\LayerStack.cpp" />
+    <ClCompile Include="src\Banana\Layer.cpp" />
     <ClCompile Include="src\Banana\Application.cpp" />
     <ClCompile Include="src\Banana\Log.cpp" />
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
