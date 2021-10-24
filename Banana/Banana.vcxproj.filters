@@ -37,6 +37,12 @@
     <ClInclude Include="src\Banana\Events\MouseEvent.h">
       <Filter>Banana\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Banana\Layer.h">
+      <Filter>Banana</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Banana\LayerStack.h">
+      <Filter>Banana</Filter>
+    </ClInclude>
     <ClInclude Include="src\Banana\Log.h">
       <Filter>Banana</Filter>
     </ClInclude>
@@ -47,11 +53,15 @@
       <Filter>Platform\Windows</Filter>
     </ClInclude>
     <ClInclude Include="src\bnpch.h" />
-    <ClInclude Include="src\Banana\Layer.h" />
-    <ClInclude Include="src\Banana\LayerStack.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Banana\Application.cpp">
+      <Filter>Banana</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Banana\Layer.cpp">
+      <Filter>Banana</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Banana\LayerStack.cpp">
       <Filter>Banana</Filter>
     </ClCompile>
     <ClCompile Include="src\Banana\Log.cpp">
@@ -61,7 +71,5 @@
       <Filter>Platform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\bnpch.cpp" />
-    <ClCompile Include="src\Banana\Layer.cpp" />
-    <ClCompile Include="src\Banana\LayerStack.cpp" />
   </ItemGroup>
 </Project>

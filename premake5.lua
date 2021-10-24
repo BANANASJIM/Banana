@@ -13,9 +13,9 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 -- Include directories relative to root folder (solution directory)
 IncludeDir = {}
 IncludeDir["GLFW"] = "Banana/vendor/GLFW/include"
-
+IncludeDir["Glad"] = "Banana/vendor/Glad/include"
 include "Banana/vendor/GLFW"
-
+include "Banana/vendor/Glad"
 project "Banana"
 	location "Banana"
 	kind "SharedLib"
@@ -37,12 +37,14 @@ project "Banana"
 	{
 		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include",
-		"%{IncludeDir.GLFW}"
+		"%{IncludeDir.GLFW}",
+		"%{IncludeDir.Glad}"
 	}
 
 	links 
 	{ 
 		"GLFW",
+		"Glad",
 		"opengl32.lib"
 	}
 
@@ -54,7 +56,8 @@ project "Banana"
 		defines
 		{
 			"BN_PLATFORM_WINDOWS",
-			"BN_BUILD_DLL"
+			"BN_BUILD_DLL",
+			"GLFW_INCLUDE_NONE"
 		}
 
 		postbuildcommands
