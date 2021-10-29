@@ -6,6 +6,7 @@
 #include "Banana/Layer.h"
 #include "Banana/Log.h"
 
+#include "Banana/ImGui/ImGuiLayer.h"
 
 //-----Entry Point-------------------
 #include "Banana/EntryPoint.h"
