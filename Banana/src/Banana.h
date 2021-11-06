@@ -6,6 +6,10 @@
 #include "Banana/Layer.h"
 #include "Banana/Log.h"
 
+#include "Banana/Input.h"
+#include "Banana/MouseButtonCodes.h"
+#include "Banana/KeyCodes.h"
+
 #include "Banana/ImGui/ImGuiLayer.h"
 
 //-----Entry Point-------------------

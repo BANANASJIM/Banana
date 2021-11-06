@@ -161,9 +161,11 @@
     <ClInclude Include="src\Banana\Events\Event.h" />
     <ClInclude Include="src\Banana\Events\KeyEvent.h" />
     <ClInclude Include="src\Banana\Events\MouseEvent.h" />
+    <ClInclude Include="src\Banana\KeyCodes.h" />
     <ClInclude Include="src\Banana\Layer.h" />
     <ClInclude Include="src\Banana\LayerStack.h" />
     <ClInclude Include="src\Banana\Log.h" />
+    <ClInclude Include="src\Banana\MouseButtonCodes.h" />
     <ClInclude Include="src\Banana\Window.h" />
     <ClInclude Include="src\Banana\imGui\ImGuiLayer.h" />
     <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h" />
