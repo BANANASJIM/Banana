@@ -6,6 +6,7 @@
 #include "Banana/LayerStack.h"
 #include "Banana/Events/Event.h"
 #include "Banana/Events/ApplicationEvent.h"
+#include "Banana/ImGui/ImGuiLayer.h"
 
 namespace Banana {
 
@@ -29,6 +30,7 @@ namespace Banana {
 		bool OnWindowClose(WindowCloseEvent& e);
 
 		std::unique_ptr<Window> m_Window;
+		ImGuiLayer* m_ImGuiLayer;
 		bool m_Running = true;
 		LayerStack m_LayerStack;
 	private:
