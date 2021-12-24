@@ -1,10 +1,14 @@
 #pragma once
 
 #ifdef BN_PLATFORM_WINDOWS
+#if BN_DYNAMIC_LINK
 		#ifdef BN_BUILD_DLL
 			#define BANANA_API __declspec(dllexport)
 		#else
 			#define BANANA_API __declspec(dllimport)
+		#endif
+#else
+		#define BANANA_API
 #endif
 #else
 		#error Banana only supports Windows!
