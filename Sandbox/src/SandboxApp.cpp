@@ -11,7 +11,6 @@ public:
 
 	void OnUpdate() override
 	{
-		//BN_INFO("ExampleLayer::Update");
 		if (Banana::Input::IsKeyPressed(BN_KEY_TAB))
 			BN_TRACE("TAB key is pressed!");
 	}

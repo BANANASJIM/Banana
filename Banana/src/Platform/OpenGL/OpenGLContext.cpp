@@ -18,6 +18,12 @@ namespace Banana {
 		glfwMakeContextCurrent(m_WindowHandle);
 		int status = gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
 		BN_CORE_ASSERT(status, "Failed to initialize Glad!");
+
+		BN_CORE_INFO("OpenGL Info:");
+		BN_CORE_INFO("  Vendor: {0}", glGetString(GL_VENDOR));
+		BN_CORE_INFO("  Renderer: {0}", glGetString(GL_RENDERER));
+		BN_CORE_INFO("  Version: {0}", glGetString(GL_VERSION));
+
 	}
 
 	void OpenGLContext::SwapBuffers()

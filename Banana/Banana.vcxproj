@@ -143,6 +143,7 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\Banana\Renderer\Shader.h" />
     <ClInclude Include="src\Banana.h" />
     <ClInclude Include="src\Banana\Application.h" />
     <ClInclude Include="src\Banana\Core.h" />
@@ -581,6 +582,7 @@
     <ClInclude Include="vendor\glm\glm\vector_relational.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Banana\Renderer\Shader.cpp" />
     <ClCompile Include="src\Banana\Application.cpp" />
     <ClCompile Include="src\Banana\Layer.cpp" />
     <ClCompile Include="src\Banana\LayerStack.cpp" />

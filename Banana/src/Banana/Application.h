@@ -8,6 +8,8 @@
 #include "Banana/Events/ApplicationEvent.h"
 #include "Banana/ImGui/ImGuiLayer.h"
 
+#include "Banana/Renderer/Shader.h"
+
 namespace Banana {
 
 	class BANANA_API Application
@@ -33,8 +35,11 @@ namespace Banana {
 		ImGuiLayer* m_ImGuiLayer;
 		bool m_Running = true;
 		LayerStack m_LayerStack;
+
+		unsigned int m_VertexArray, m_VertexBuffer, m_IndexBuffer;
 	private:
 		static Application* s_Instance;
+		std::unique_ptr<Shader> m_Shader;
 	};
 
 	// To be defined in CLIENT
